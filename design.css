@@ -14,11 +14,11 @@
     outline: none !important;
 } */
 
-.form1:focus{
+.form1:focus {
     outline: none;
 }
 
-.border1{
+.border1 {
     width: 250px;
     border-radius: 50%;
     padding: 5px;
@@ -27,18 +27,26 @@
 
 
 
-.whaticon{
+.whaticon {
     /* width: 100%; */
     display: flex;
     justify-content: end;
     position: sticky;
     font-size: 40px;
-    bottom:30px;
+    bottom: 30px;
     padding-right: 50px;
 }
 
 
+.moving-text {
 
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #000000,
+            #1c9ff4, #f9ff00, #d20928);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 
 
@@ -405,7 +413,7 @@ body {
     width: 100px;
     position: absolute;
     top: 150px;
-    right:10px;
+    right: 10px;
     display: flex;
     justify-content: flex-end;
 }
@@ -421,27 +429,33 @@ body {
     position: relative;
     overflow: hidden;
 }
-.resumebtn span{
+
+.resumebtn span {
     position: relative;
     z-index: 1;
 }
 
-.resumebtn::before{
+.resumebtn::before {
     content: "";
-    position: absolute; /* to get this near to the button(span) element*/
-    width: 0;  /*20px*/
+    position: absolute;
+    /* to get this near to the button(span) element*/
+    width: 0;
+    /*20px*/
     height: 0;
     background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    left: 50%; /*var(--xposition)*/
-    top: 50%; /*var(--yposition)*/
+    left: 50%;
+    /*var(--xposition)*/
+    top: 50%;
+    /*var(--yposition)*/
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
 }
-.resumebtn:hover::before{
+
+.resumebtn:hover::before {
     width: 300px;
     height: 300px;
-    
+
 }
 
 /* ================= Skill-set page ================== */
@@ -460,9 +474,9 @@ body {
     border: 1px solid rgb(48, 80, 86);
     border-radius: 16px;
     box-shadow: -1px -2px -2px rgba(255, 255, 255, 0.25),
-    inset 8px 12px 15px rgba(0,0,0,0.2),
-    20px 30px 30px rgba(0,0,0,0.25),
-    inset -2px -2px 8px rgba(0,0,0,0.5);
+        inset 8px 12px 15px rgba(0, 0, 0, 0.2),
+        20px 30px 30px rgba(0, 0, 0, 0.25),
+        inset -2px -2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card_container1 {
