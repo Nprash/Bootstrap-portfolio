@@ -22,7 +22,12 @@
     width: 250px;
     border-radius: 50%;
     padding: 5px;
-
+    transition: transform .9s;
+    cursor: pointer;
+}
+.border1:hover{
+    transform: scale(1.2);
+    transition: all linear .9s;
 }
 
 
@@ -906,7 +911,86 @@ body {
     object-fit: cover;
     border-radius: 100%;
     position: relative;
+    transition: transform .9s ;
+    cursor: pointer;
 }
+#person-img:hover{
+    transform: scale(1.2);
+    transition: all linear .9s;
+}
+
+.img-1{
+    transition: transform .9s ;
+}
+.img-1:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-2{
+    transition: transform .9s ;
+}
+.img-2:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-3{
+    transition: transform .9s ;
+}
+.img-3:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-4{
+    transition: transform .9s ;
+}
+.img-4:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-5{
+    transition: transform .9s ;
+}
+.img-5:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-6{
+    transition: transform .9s ;
+}
+.img-6:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-7{
+    transition: transform .9s ;
+}
+.img-7:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-8{
+    transition: transform .9s ;
+}
+.img-8:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-9{
+    transition: transform .9s ;
+}
+.img-9:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+.img-10{
+    transition: transform .9s ;
+}
+.img-10:hover{
+    transform: scale(1.09);
+    transition: transform .9s ;
+}
+
+
 
 /* .content-flex {
     object-fit:cover;
