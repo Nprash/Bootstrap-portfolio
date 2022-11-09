@@ -8,7 +8,7 @@ let characterIndex = 0;
 
 function updateText(){
     characterIndex++;  // it stops by giving one value with giving one one char and stops to read second index value we have to use if cond to check values lenth
-    Textanimate.innerHTML = `<h1>Iam ${career[careerIndex].slice(0,1)=== "i"? "an":"a"} ${career[careerIndex].slice(0,characterIndex)}</h1>` //slice give us substring of a string 1st argument will be index position 2nd will be no of char that we wnt to print
+    Textanimate.innerHTML = `<h1>I am ${career[careerIndex].slice(0,1)=== "i"? "an":"a"} ${career[careerIndex].slice(0,characterIndex)}</h1>` //slice give us substring of a string 1st argument will be index position 2nd will be no of char that we wnt to print
     //${career[careerIndex].slice(0,1)=== "i"? "an":"a"} to have a and an when first letter of a string would be Id
 // above line we reading characterIndex or each character of a string, if one string happend it needs to jump on 2nd string
     if(characterIndex === career[careerIndex].length){ //if the charctindx = to length of indexvalue , we need to increase the careerindex so that 2nd string willpas and reads alll the letter, to read the each letter in a 2nd value charcterindex must be 0

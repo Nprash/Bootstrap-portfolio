@@ -47,8 +47,8 @@
 
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #000000,
-            #1c9ff4, #f9ff00, #d20928);
+    background: linear-gradient(to right
+            , #f9ff00, #d20928);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
