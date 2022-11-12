@@ -183,7 +183,7 @@ nextBtn.addEventListener('click', function () {
         currentitem = 0;
     }
     showcontent(currentitem);
-    console.log(currentitem);
+    // console.log(currentitem);
 });
 
 prevBtn.addEventListener('click', function () {
@@ -192,7 +192,7 @@ prevBtn.addEventListener('click', function () {
         currentitem = reviews.length - 1;
     }
     showcontent(currentitem);
-    console.log(currentitem);
+    // console.log(currentitem);
 });
 
 
