@@ -41,7 +41,7 @@
 
 /* flying card style */
 .flyingpic1{
-    background-image: url(./clip-strategic-plan-for-business.png);
+    /* background-image: url(./clip-strategic-plan-for-business.png); */
     width: 200px;
     height: 200px;
     border-radius: 50%;
