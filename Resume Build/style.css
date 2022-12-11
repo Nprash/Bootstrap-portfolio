@@ -23,7 +23,7 @@ body {
     max-width: 1000px;
     background: #fff;
     margin: 50px 0 ;
-    margin-left: 70px;
+    margin-left: 80px;
     box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
     border-left: 50px solid #fff;
     border-right: 50px solid #fff;
@@ -68,25 +68,29 @@ body {
 .container .top .profilrText {
     position: relative;
     padding: 20px;
-    padding-top: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .container .top .profilrText h3 {
     font-size: 3em;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.01em; */
     line-height: 1.2em;
     font-weight: 600;
     color: #333;
+    /* background-image: linear-gradient(350deg, #2128fd 40%, #000000 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
-.container .top .profilrText h3 span {
+.container .top .profilrText  h6 {
     position: relative;
-    font-size: 0.5em;
-    font-weight: 300;
-    top: -10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
 }
 
 .container .contentBox {
