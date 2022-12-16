@@ -98,9 +98,9 @@ body {
     min-height: 500px;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 70% ;
+    grid-template-columns: 35% 65% ;
     /* grid-template-rows: 80% 20%; */
-    padding: 20px 0px 40px;
+    padding: 20px 0px 0px;
 }
 
 .container .contentBox h3 {
@@ -164,6 +164,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
     /* flex-direction: column; */
 
 }
@@ -205,23 +206,23 @@ h6 {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .container .contentBox ul.interest li .icon {
     position: relative;
-    width: 40px;
-    height: 40px;
-    background: #21BF73;
-    color: #fff;
-    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    /* background: #; */
+    color: #21BF73;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container .contentBox ul.interest li .icon ion-icon {
-    color: #fff;
+    color: #21BF73;
     margin: 0;
 }
 
@@ -259,6 +260,14 @@ p {
     margin: 0;
 }
 
+
+
+
+
+
+
+
+
 .about.skills .box {
     position: relative;
     width: 85%;
@@ -293,7 +302,7 @@ p {
 
 .about.courses ul.courselist li {
     list-style: none;
-    margin: 8px 0;
+    margin: 15px 0;
     line-height: 1em;
     color: #333;
     display: flex;
@@ -310,12 +319,7 @@ p {
     margin: 10px 0;
 }
 
-.container .contentBox ul li {
-    margin: 25px 0;
-    line-height: 1em;
-    color: #333;
-    display: flex;
-}
+
 
 /* print button */
 .section-2{
@@ -336,4 +340,61 @@ p {
 .print-btn:hover{
     border:1px #fff;
     background: dodgerblue;
+}
+
+
+.contentBox2{
+    /* position: relative; */
+    width: 50%;
+    display: grid;
+
+}
+
+.contentBox2 h3 {
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    /* margin: auto 10px; */
+}
+
+
+.contentBox2 .projects {
+    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container ul.projects li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.container ul.projects li a{
+    text-decoration: none;
+
+}
+
+.container ul.projects li .icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    /* background: #21BF73; */
+    color: #21BF73;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul.projects li .icon ion-icon {
+    /* font-size: 55px; */
+    color: #fff;
+    margin: 0;
 }
