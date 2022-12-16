@@ -345,9 +345,10 @@ p {
 
 .contentBox2{
     /* position: relative; */
-    width: 50%;
+    width: 100%;
     display: grid;
-
+    grid-template-columns: 1fr 2fr;
+    margin: 30px auto;
 }
 
 .contentBox2 h3 {
@@ -357,24 +358,24 @@ p {
     font-weight: 600;
     color: #333;
     letter-spacing: 0.1em;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    /* margin: auto 10px; */
+    margin: auto 10px;
+    /* margin-bottom: 20px;
+    margin-top: 50px; */
 }
 
 
 .contentBox2 .projects {
     /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
-.container ul.projects li {
+.container .projects li {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 15px 0;
+    margin: auto;
 }
 .container ul.projects li a{
     text-decoration: none;
