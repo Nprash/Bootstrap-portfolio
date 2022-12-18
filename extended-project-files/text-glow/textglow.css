@@ -10,16 +10,11 @@
 .glow::before {
     content: attr(data-text);
     position: absolute;
-    color: #fff;
-    background-color: #ff99ce;
-    background-image:
-        radial-gradient(at 35% 0%, hsla(212, 84%, 61%, 1) 0px, transparent 50%),
-        radial-gradient(at 89% 48%, hsla(238, 69%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 89% 42%, hsla(313, 71%, 79%, 1) 0px, transparent 50%),
-        radial-gradient(at 16% 6%, hsla(282, 82%, 79%, 1) 0px, transparent 50%),
-        radial-gradient(at 31% 96%, hsla(45, 93%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 30% 2%, hsla(145, 84%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 5% 18%, hsla(352, 78%, 74%, 1) 0px, transparent 50%);
+    color: #00DBDE;
+    background-color: transparent;
+    /* background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+    background-clip: text;
+    -web-kit-background-clip: text;
     width: 100px;
     overflow: hidden;
     white-space: nowrap;

@@ -21,8 +21,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-opacity-1 sticky-top shadow">
-        <div class="container-fluid mt-3">
-            <a class="navbar-brand" href="#">Basic Portfolio</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/illustrations-img/icons8-portfolio-64.png" alt="">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,8 +31,7 @@
             <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 text-center navul">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-info p-2 border-0 " aria-current="page"
-                            href="index.html">Home</a>
+                        <a class="nav-link btn btn-outline-info p-2 border-0 " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-info p-2 border-0" href="resume.html">Resume</a>
@@ -54,6 +53,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- <div class="block1"> -->
 
@@ -239,16 +239,7 @@
                 </div>
                 <div class="card-body text-center my-5">
                     <a href="#" class="btnRR"><span>Hover me</span></a>
-                    <script>
-                        const btnelement = document.querySelector(".btnRR");
-                        btnelement.addEventListener("mouseover", (b) => {
-                            const x = (b.pageX - btnelement.offsetLeft);
-                            const y = (b.pageY - btnelement.offsetTop);
-                            btnelement.style.setProperty("--xvalue", x + "px");
-                            btnelement.style.setProperty("--yvalue", y + "px");
-                            // console.log(x,y);
-                        })
-                    </script>
+                    
                 </div>
             </div>
 
@@ -322,7 +313,16 @@
 
 
 
-
+    <script>
+        const btnelement = document.querySelector(".btnRR");
+        btnelement.addEventListener("mouseover", (b) => {
+            const x = (b.pageX - btnelement.offsetLeft);
+            const y = (b.pageY - btnelement.offsetTop);
+            btnelement.style.setProperty("--xvalue", x + "px");
+            btnelement.style.setProperty("--yvalue", y + "px");
+            // console.log(x,y);
+        })
+    </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
