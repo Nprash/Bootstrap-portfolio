@@ -23,10 +23,11 @@ body {
     max-width: 1000px;
     background: #fff;
     margin: 50px 0 ;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
     border-left: 50px solid #fff;
     border-right: 50px solid #fff;
+    border-bottom: 50px solid #fff;
 
 }
 
@@ -65,7 +66,7 @@ body {
     object-fit: cover;
 }
 
-.container .top .profilrText {
+.container .top .profileText {
     position: relative;
     padding: 20px;
     display: flex;
@@ -74,23 +75,27 @@ body {
     justify-content: center;
 }
 
-.container .top .profilrText h3 {
+.container .top .profileText h3 {
     font-size: 3em;
     /* letter-spacing: 0.01em; */
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
-    /* background-image: linear-gradient(350deg, #2128fd 40%, #000000 99%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    
 }
-
-.container .top .profilrText  h6 {
+.container .top .profileText h3::first-letter{
+    color: blue;
+}
+.container .top .profileText  h6 {
     position: relative;
     display: flex;
     justify-content: center;
     font-size: 1.7rem;
+    font-weight: lighter;
+    background-image: linear-gradient(250deg, #2128fd 10%, #21BF73 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container .contentBox {
@@ -99,7 +104,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65% ;
-    /* grid-template-rows: 80% 20%; */
+    
     padding: 20px 0px 0px;
 }
 
@@ -154,9 +159,10 @@ h4 {
     margin: 5px 0;
 }
 
-h6 {
+p {
     color: #333;
     font-weight: 300;
+    margin: 5px 0;
     font-size: 1em;
 }
 
@@ -213,7 +219,6 @@ h6 {
     position: relative;
     width: 25px;
     height: 25px;
-    /* background: #; */
     color: #21BF73;
     border-radius: 25px;
     display: flex;
@@ -233,36 +238,12 @@ p {
 .rightside {
     padding-left: 40px;
 }
-
-.about .box {
-    display: flex;
-    flex-direction: row;
-    margin: 25px 0;
-}
-
-.about .box .year_company {
-    min-width: 150px;
-    margin-bottom: 10px;
-}
-
-.about .box .year_company h5 {
+.rightside .profile p{
     color: #333;
-    font-weight: 600;
+    line-height: 1.3;
+    align-self: center;
+    align-items: center;
 }
-
-.about .box .year_company h5:nth-child(1) {
-    color: blue;
-}
-
-.about .box .text h4 {
-    color: blue;
-    font-size: 16px;
-    margin: 0;
-}
-
-
-
-
 
 
 
@@ -320,12 +301,139 @@ p {
 }
 
 
+.contentBox2{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px auto;
+}
+
+.contentBox2 h3 {
+    min-width: 315px;
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin: 50px auto;
+}
+
+
+.contentBox2 .projects {
+    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contentBox2 .projects li {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+.contentBox2 ul.projects li a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.container ul.projects li .icon {
+    /* position: relative; */
+    width: 23px;
+    height: 23px;
+    color: #21BF73;
+}
+
+.experience{
+    margin: 50px auto;
+    /* height: 120vh; */
+}
+.about h3{
+    width: 315px;
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin: 50px 0 20px;
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.about .box .year_company {
+    min-width: 380px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about .box .year_company h5 {
+    color: #333;
+    font-weight: 600;
+}
+
+.about .box .year_company h5:nth-child(1) {
+    color: blue;
+}
+.about .box .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #333;
+    line-height: 1.3;
+
+}
+.about .box .text h4 {
+    color: blue;
+    font-size: 16px;
+    margin: 0;
+}
+.declar{
+    position: relative;
+    height: 40vh;
+    margin: 30px auto;
+}
+.declaration{
+    margin: 30px auto;
+}
+.declaration h3{
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.place-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+.signature{
+    padding-right: 20px;
+}
 
 /* print button */
 .section-2{
-    position: relative;;
-    bottom: -840px;
-    right: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .print-btn{
     /* position: sticky; */
@@ -340,62 +448,4 @@ p {
 .print-btn:hover{
     border:1px #fff;
     background: dodgerblue;
-}
-
-
-.contentBox2{
-    /* position: relative; */
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 30px auto;
-}
-
-.contentBox2 h3 {
-    border-left: 4px solid blue;
-    padding-left: 10px;
-    line-height: 1em;
-    font-weight: 600;
-    color: #333;
-    letter-spacing: 0.1em;
-    margin: auto 10px;
-    /* margin-bottom: 20px;
-    margin-top: 50px; */
-}
-
-
-.contentBox2 .projects {
-    /*here targeting class use ul.education or directly use .education class with li to get column alignment*/
-    position: relative;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-}
-
-.container .projects li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: auto;
-}
-.container ul.projects li a{
-    text-decoration: none;
-
-}
-
-.container ul.projects li .icon {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    /* background: #21BF73; */
-    color: #21BF73;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container ul.projects li .icon ion-icon {
-    /* font-size: 55px; */
-    color: #fff;
-    margin: 0;
 }
