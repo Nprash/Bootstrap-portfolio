@@ -449,3 +449,6 @@ p {
     border:1px #fff;
     background: dodgerblue;
 }
+.d-none{
+    display: none;;
+}
