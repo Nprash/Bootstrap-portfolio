@@ -119,7 +119,7 @@ const reviews = [
         img:
             "./gallery with/pr-bike-1.jpg",
         text:
-            "Possess strong knowledge of  programming languages such as HTML/CSS, JavaScript."
+            "Possess strong knowledge in front end web development such as HTML/CSS,Bootstrap & JavaScript."
 
     },
     {
@@ -129,7 +129,7 @@ const reviews = [
         img:
             "./gallery with/pr-nep-3.jpg",
         text:
-            "Looking to gain a Web Designing position that can benefit from huge programming knowledge.",
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, iusto..",
     },
     {
         id: 3,
@@ -147,7 +147,7 @@ const reviews = [
         img:
             "./gallery with/pr-gitar-5.jpg",
         text:
-            "to enhance overall strategic plan and direction of an organization lor ipsum lorm. ",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, iusto. ",
     },
 ];
 

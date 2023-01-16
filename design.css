@@ -51,6 +51,7 @@
             , #f9ff00, #d20928);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .underline1 {
@@ -1150,4 +1151,16 @@ body {
 
 .Textanimate:hover {
     color: #222;
+}
+.text-infos{
+    color: orange;
+}
+.findbelow-btn{
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: rgb(253, 218, 153);
+    border-radius: 8px;
 }
